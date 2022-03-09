@@ -18,7 +18,7 @@ class Contestant {
     // })
 
      contestantCountRef.on("value",(data)=>{
-       contestantCount = data();
+       contestantCount = data.val();
      })
 
   }
