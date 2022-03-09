@@ -8,7 +8,7 @@ class Contestant {
   getCount(){
     var contestantCountRef = database.ref('contestantCount');
 
-     contestantCountRef.on("value",()=>{
+     contestantCountRef.on("value",(data)=>{
        contestantCount = data.val();
      })
 
